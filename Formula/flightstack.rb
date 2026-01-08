@@ -1,22 +1,23 @@
 class Flightstack < Formula
-  desc "CLI for FlightStack - Self-hosted CI/CD for Flutter"
+  desc "CLI and Agent for FlightStack - Self-hosted CI/CD for Flutter"
   homepage "https://flightstack.dev"
-  version "1.2.49"
+  version "1.2.50"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.2.49/flightstack-1.2.49-macos-arm64.tar.gz"
-      sha256 "edc77bcfc957bbcd1fcc0045be0db34daea1f52a550383acd83dceac6bb078a2"
+      url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.2.50/flightstack-1.2.50-macos-arm64.tar.gz"
+      sha256 "9027e844666efba6c4033d31694e954aa1a20d39fd2e2a54de606a9d8bfc2073"
     end
     on_intel do
-      url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.2.49/flightstack-1.2.49-macos-x64.tar.gz"
-      sha256 "fa40d98162e0fd6ed56e91492f4cb6d29443ad1d846d24983ef9a2b94bf1c71b"
+      url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.2.50/flightstack-1.2.50-macos-x64.tar.gz"
+      sha256 "698a64b2b70676fcbc4e4d8458450275e3288da89fb03ac21475e21fb3063c65"
     end
   end
 
   def install
     bin.install "flightstack"
+    bin.install "flightstack-agent"
   end
 
   test do
