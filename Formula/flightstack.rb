@@ -4,18 +4,14 @@ class Flightstack < Formula
   version "1.5.0"
   license "MIT"
 
-  # Ensure reinstall overwrites stale non-symlink binaries
-  link_overwrite "bin/flightstack"
-  link_overwrite "bin/flightstack-agent"
-
   on_macos do
     on_arm do
       url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.5.0/flightstack-1.5.0-macos-arm64.tar.gz"
-      sha256 "PLACEHOLDER_ARM64_SHA256"
+      sha256 "e9c75a278a33f291b7ef4dc4a94309e841667e16639d47b8bef3f2f27057765b"
     end
     on_intel do
       url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.5.0/flightstack-1.5.0-macos-x64.tar.gz"
-      sha256 "PLACEHOLDER_X64_SHA256"
+      sha256 "d32c544f9de53dc719acde6d922202365b0193f8ddefe03494bf516063ccea23"
     end
   end
 
