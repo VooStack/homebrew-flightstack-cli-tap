@@ -7,11 +7,11 @@ class Flightstack < Formula
   on_macos do
     on_arm do
       url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.5.2/flightstack-1.5.2-macos-arm64.tar.gz"
-      sha256 "0b6d4766907c51b93d0d0a18097d62107bc51f863cb59e5850b3a96500c29ff6"
+      sha256 "f0d244229019f0d9a32d7b36a77ada698b5432aeaa76ab7879b1da8a5fff2c9e"
     end
     on_intel do
       url "https://github.com/voostack/flightstack-releases/releases/download/cli-v1.5.2/flightstack-1.5.2-macos-x64.tar.gz"
-      sha256 "dd0c4b684bc192e75ec95ff799dab2df19938a53e8d3531dae71ffbd8a035f2b"
+      sha256 "d7c2fd4cf4ae25c026dc5fb5105078c96442b5a75baa326965f97d86456ec25d"
     end
   end
 
